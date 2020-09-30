@@ -39,7 +39,7 @@ def no_longer_afk(bot: Bot, update: Update):
 
 @run_async
 def reply_afk(bot: Bot, update: Update):
-    message = update.effective_message .reply_text (" {} is AFK Reason-  .format(update.effective_user.first_name))
+    message = update.effective_message # type: Optional[Message]
     entities = message.parse_entities([MessageEntity.TEXT_MENTION, MessageEntity.MENTION])
     if message.entities and entities:
         for ent in entities:
