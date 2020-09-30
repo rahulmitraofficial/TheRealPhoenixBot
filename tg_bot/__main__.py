@@ -148,7 +148,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add Pɧơɛnıх to your group.",
+                                text="Add Danger Dog to your group.",
                                 url="t.me/{}?startgroup=botstart".format(bot.username),
                             )
                         ]
